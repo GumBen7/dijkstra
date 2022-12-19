@@ -1,8 +1,8 @@
 ﻿namespace FiveThree {
     class Program {
         static void Main(string[] args) {
-            var n = System.Int32.Parse(System.Console.ReadLine());
-            var sa = System.Console.ReadLine().Split();
+            var n = System.Int32.Parse(System.Console.ReadLine());            
+            var sa = System.Console.ReadLine().Split(new string[]{"  ", " "}, System.StringSplitOptions.None);
             var a = new int[n];
             for (int i = 0; i < n; i++) {
                 a[i] = System.Int32.Parse(sa[i]);
